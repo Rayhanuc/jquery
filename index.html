@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JQuery</title>
+	<title>JQuery class list</title>
 
 	<link rel="stylesheet" href="assets/css/bootstrap_v5.2.3.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -12,22 +12,49 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
+	<style>
+		h1 {
+			margin: 30px 0;
+			text-align: center;
+		}
+
+		.c_list {
+			margin-left: 20px;
+			margin-right: auto;
+		}
+		
+		.c_list ul {
+			list-style: none;
+		}
+		
+		.c_list ul li a{
+			text-decoration: none;
+			color: #fe4967;
+			transition: .3s;
+		}
+		
+		.c_list ul li a:hover{
+			padding-left: 6px;
+			color: #9f1d32;
+		}
+
+	</style>
+
 </head>
 <body>
 
-	<h1>jQuery Syntex</h1>
+	<h1>jQuery List</h1>
 
-	<div id="content">
-		<div id="test1">
-			<h2>Test Box 1</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quaerat obcaecati quos veritatis, voluptatem eaque laboriosam corrupti nihil fuga aliquid!</p>
-		</div>
-		<div id="test2">
-			<h2>Test Box 2</h2>
-			<p>Jonsectetur adipisicing elit. Repellendus quaerat obcaecati quos veritatis, voluptatem eaque laboriosam corrupti nihil fuga aliquid!</p>
-		</div>
+	<div class="c_list">
+		<ul>
+			<li><a target="_blank" href="index2.html">Basic Syntax</a></li>
+			<li><a target="_blank" href="index3.html">jQuery Selectors</a></li>
+			<li><a target="_blank" href="">jQuery Selectors</a></li>
+			<li><a target="_blank" href="">jQuery Selectors</a></li>
+			<li><a target="_blank" href="">jQuery Selectors</a></li>
+			<li><a target="_blank" href="">jQuery Selectors</a></li>
+		</ul>
 	</div>
-
 
 	<script src="assets/js/jquery-3.6.2.min.js"></script>
 	<script src="assets/js/bootstrap_v5.2.3.min.js"></script>

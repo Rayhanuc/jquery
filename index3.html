@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery selector</title>
+
+	<link rel="stylesheet" href="assets/css/bootstrap_v5.2.3.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/sass.css">
+	<link rel="stylesheet" href="assets/css/layouts.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+	<style>
+		h1 {
+			text-align: center;
+			margin: 25px 0;
+			font-weight: 900;
+		}
+	</style>
+
+</head>
+<body>
+
+	<h1>jQuery Selectors</h1>
+
+	<div id="box" class="test">
+		<h2>Test Box 2</h2>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae magnam sint fugit iusto vero voluptatem.</p>
+	</div>
+
+	<ul id="list">
+		<li>Orange</li>
+		<li class="test">Banana</li>
+		<li>Grapes</li>
+		<li class="test">Apple</li>
+		<li>Guava</li>
+	</ul>
+
+	
+	
+	<script src="assets/js/jquery-3.6.2.min.js"></script>
+	<script src="assets/js/bootstrap_v5.2.3.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$("#list").css({"list-style":"none", "margin":"0", "padding" : "0"});
+
+			$("#list li").css({"border" : "1px solid #ff16b4", "padding" : "20px", "list-style":"none", "margin":"10px", "padding" : "5px", "border-radius":"5px", "font-weight":"700"});
+
+			$(".test").css({"color":"#ef620c"});
+			$("#box").css({"padding":"5px"});
+			$("body").css({"background":"#ebebeb"});
+			// $("#list li:eq(4)").css({"background":"red", "color":"#fff"});
+			// $("#list li:gt(2)").css({"background":"red", "color":"#fff"});
+			$("#list li:lt(3)").css({"background":"red", "color":"#fff"});
+		});
+	</script>
+</body>
+</html>
