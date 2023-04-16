@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../jquery_learn"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "jquery"
+  }
+}
