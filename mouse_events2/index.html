@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JQuery Mouse Events2</title>
+
+	<link rel="stylesheet" href="assets/css/bootstrap_v5.2.3.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/sass.css">
+	<link rel="stylesheet" href="assets/css/layouts.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+
+	<h1>jQuery mouser events2</h1>
+
+	<div id="box" class="test">
+		<h2>Test Box 2</h2>
+		<p>Jonsectetur adipisicing elit. Repellendus quaerat obcaecati quos veritatis, voluptatem eaque laboriosam corrupti nihil fuga aliquid!</p>
+	</div>
+
+	
+
+
+
+	<script src="assets/js/jquery-3.6.2.min.js"></script>
+	<script src="assets/js/bootstrap_v5.2.3.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+		// $(document).ready(function(){
+
+		// });
+		
+		$(document).ready(function(){
+			// $("#box").click(function(){
+			// 	$("#box").css("background", "yellow");
+			// });
+
+			$("#box").click(function() {
+					$("#box").css("background-color", "green");
+					// var a = $('#box').html();
+					// console.log(a);
+			});
+
+			$("#box").dblclick(function() {
+					$("#box").css("background-color", "orange");
+			});
+
+			$("#box").contextmenu(function() {
+					$("#box").css("background-color", "blue");
+			});
+
+			$("#box").mouseenter(function() {
+					$("#box").css("background-color", "red");
+			});
+
+			$("#box").mouseleave(function() {
+					$("#box").css("background-color", "cyan");
+			});
+
+			$("#box").mou(function() {
+					$("#box").css("background-color", "cyan");
+			});
+		});
+
+	</script>
+</body>
+</html>
